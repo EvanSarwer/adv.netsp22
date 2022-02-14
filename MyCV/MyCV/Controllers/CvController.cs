@@ -13,5 +13,17 @@ namespace MyCV.Controllers
         {
             return View();
         }
+        public ActionResult Education()
+        {
+            return View();
+        }
+        public ActionResult Projects()
+        {
+            return View();
+        }
+        public ActionResult Reference()
+        {
+            return View();
+        }
     }
 }
