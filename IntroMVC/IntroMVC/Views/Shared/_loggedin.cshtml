@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div><a href="/Person/Home" class="btn btn-success">Home</a> <a href="/Person/List" class="btn btn-danger">List</a></div>
+    <div>
+        @RenderBody()
+    </div>
+    <div>&copy; Adv .Net Spring 2021-2022</div>
+</body>
+</html>

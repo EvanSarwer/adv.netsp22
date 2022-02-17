@@ -1,0 +1,15 @@
+﻿@model IntroMVC.Models.Product
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_layoutproduct.cshtml";
+}
+
+<h2>Home</h2>
+
+<div>
+    <h3 class="label-info">This is your Product Home </h3>
+    <h2>Product Name: @Model.Name </h2>
+    <h2>Id: @Model.Id</h2>
+    <h2>Price: @Model.Price</h2>
+</div>
+

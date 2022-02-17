@@ -1,0 +1,11 @@
+﻿@model IntroMVC.Models.Person
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_loggedin.cshtml";
+}
+
+<h2>Home</h2>
+<h3 class="label-info">This is your Person Home </h3>
+<h4>Name : @Model.Name</h4>
+<h4>Id : @Model.Id</h4>
+<h4>Id : @Model.Dob</h4>

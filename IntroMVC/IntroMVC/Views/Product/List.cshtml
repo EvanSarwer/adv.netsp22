@@ -1,0 +1,25 @@
+﻿@model List<IntroMVC.Models.Product>        
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_layoutproduct.cshtml";
+}
+
+<h2>List</h2>
+<div>
+    <table class="table table-bordered">
+        <tr>
+            <th>Product Name</th>
+            <th>Product Id</th>
+            <th>Product Price</th>
+        </tr>
+        @foreach (var p in Model)
+        {
+    <tr>
+        <td>@p.Name</td>
+        <td>@p.Id</td>
+        <td>@p.Price</td>
+    </tr>
+        }
+    </table>
+</div>
+
