@@ -1,0 +1,24 @@
+﻿@model IntroMVC.Models.Student
+@{
+    ViewBag.Title = "Logged In";
+    Layout = "~/Views/Shared/_loggedin.cshtml";
+}
+@if (Model != null)
+{
+    <h1>@Model.Name</h1>
+}
+<h2>Create</h2>
+<form action="/Student/Create" method="POST">
+    <input type="text" name="Name" value="@Model.Name" placeholder="Name" class="form-control" />
+    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+    <input type="text" name="Id" value="@Model.Id" placeholder="Id" class="form-control" />
+    @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
+    <input type="text" name="Dob" value="@Model.Dob" placeholder="Date of Birth" class="form-control" />
+    @Html.ValidationMessageFor(model => model.Dob, "", new { @class = "text-danger" })
+    <input type="text" name="Email" value="@Model.Email" placeholder="Email" class="form-control" />
+    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+    <input type="password" name="Password" value="@Model.Password" placeholder="Password" class="form-control" />
+    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+    <input type="submit" placeholder="Submit" />
+</form>
+
