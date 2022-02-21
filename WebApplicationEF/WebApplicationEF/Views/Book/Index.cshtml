@@ -1,0 +1,26 @@
+﻿@model List<WebApplicationEF.Models.Database.Book>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Id</th>
+        <th>Author</th>
+        <th>Price</th>
+    </tr>
+    @foreach (var b in Model)
+    {
+        <tr>
+            <td>@b.Name</td>
+            <td>@b.Id</td>
+            <td>@b.Author</td>
+            <td>@b.Price</td>
+        </tr>
+    }
+
+</table>
+
