@@ -13,7 +13,7 @@ namespace WebApplicationEF.Controllers
         public ActionResult Index()
         {
             AdvWebEntities db = new AdvWebEntities();
-            var data = db.Books.ToList();
+            var data = db.Books.ToList();   // (from b  in db.Books where b.Author.Contains("Kazi") select b).ToList();
             return View(data);
         } 
         [HttpGet]

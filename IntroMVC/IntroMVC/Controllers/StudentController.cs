@@ -30,6 +30,8 @@ namespace IntroMVC.Controllers
                 conn.Close();
                 //database operation
                 return RedirectToAction("List", "Person");
+
+                /*return RedirectToAction("Submit");*/   //same controller er method e pass korle
             }
             return View(s);
         }

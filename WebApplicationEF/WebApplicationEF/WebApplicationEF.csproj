@@ -131,11 +131,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BookController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Database\Book.cs">
-      <DependentUpon>BoookDB.tt</DependentUpon>
+      <DependentUpon>NewsDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Database\BoookDB.Context.cs">
       <AutoGen>True</AutoGen>
@@ -152,8 +153,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BoookDB.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Database\News.cs">
+      <DependentUpon>NewsDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Database\NewsDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Database\NewsDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Database\NewsDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsDB.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Database\User.cs">
-      <DependentUpon>BoookDB.tt</DependentUpon>
+      <DependentUpon>NewsDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -176,6 +195,16 @@
       <DependentUpon>BoookDB.edmx</DependentUpon>
       <LastGenOutput>BoookDB.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\Database\NewsDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NewsDB.edmx</DependentUpon>
+      <LastGenOutput>NewsDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Database\NewsDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NewsDB.edmx</DependentUpon>
+      <LastGenOutput>NewsDB.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Models\Database\BoookDB.edmx">
@@ -184,6 +213,13 @@
     </EntityDeploy>
     <Content Include="Models\Database\BoookDB.edmx.diagram">
       <DependentUpon>BoookDB.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\Database\NewsDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NewsDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Database\NewsDB.edmx.diagram">
+      <DependentUpon>NewsDB.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -212,6 +248,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Book\Index.cshtml" />
     <Content Include="Views\Book\Create.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\News\Create.cshtml" />
+    <Content Include="Views\News\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

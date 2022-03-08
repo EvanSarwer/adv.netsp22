@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>News Create</h2>
+
+<form action="/News/Create" method="post">
+    <input type="text" name="Title" value="@Model.Title" placeholder="Title" class="form-control" />
+    <textarea name="Description" placeholder="Description" class="form-control">@Model.Description</textarea> 
+    <select name="Category">
+        <option value="@Model.Category">@Model.Category</option>
+        <option value="Sports">Sports</option>
+        <option value="Politics">Politics</option>
+        <option value="Economics">Economics</option>
+    </select><br />
+    <input type="submit" value="Add" />
+</form>
+

@@ -13,10 +13,10 @@ namespace WebApplicationEF.Models.Database
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class AdvWebEntities : DbContext
+    public partial class AdvWebEntities1 : DbContext
     {
-        public AdvWebEntities()
-            : base("name=AdvWebEntities")
+        public AdvWebEntities1()
+            : base("name=AdvWebEntities1")
         {
         }
     
@@ -26,7 +26,7 @@ namespace WebApplicationEF.Models.Database
         }
     
         public virtual DbSet<Book> Books { get; set; }
-        public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<News> News { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
 }
