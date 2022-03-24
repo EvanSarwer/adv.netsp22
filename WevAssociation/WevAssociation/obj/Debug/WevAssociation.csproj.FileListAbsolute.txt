@@ -79,3 +79,5 @@ C:\Users\user\OneDrive\Documents\ASP .NET Web\WevAssociation\WevAssociation\obj\
 C:\Users\user\OneDrive\Documents\ASP .NET Web\WevAssociation\WevAssociation\obj\Debug\WevAssociation.csproj.CopyComplete
 C:\Users\user\OneDrive\Documents\ASP .NET Web\WevAssociation\WevAssociation\obj\Debug\WevAssociation.dll
 C:\Users\user\OneDrive\Documents\ASP .NET Web\WevAssociation\WevAssociation\obj\Debug\WevAssociation.pdb
+C:\Users\user\OneDrive\Documents\ASP .NET Web\WevAssociation\WevAssociation\bin\AutoMapper.dll
+C:\Users\user\OneDrive\Documents\ASP .NET Web\WevAssociation\WevAssociation\bin\AutoMapper.xml

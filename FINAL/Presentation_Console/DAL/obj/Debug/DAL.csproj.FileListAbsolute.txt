@@ -1,0 +1,10 @@
+C:\Users\user\OneDrive\Documents\ASP .NET Web\FINAL\Presentation_Console\DAL\bin\Debug\DAL.dll.config
+C:\Users\user\OneDrive\Documents\ASP .NET Web\FINAL\Presentation_Console\DAL\bin\Debug\DAL.dll
+C:\Users\user\OneDrive\Documents\ASP .NET Web\FINAL\Presentation_Console\DAL\bin\Debug\DAL.pdb
+C:\Users\user\OneDrive\Documents\ASP .NET Web\FINAL\Presentation_Console\DAL\bin\Debug\EntityFramework.dll
+C:\Users\user\OneDrive\Documents\ASP .NET Web\FINAL\Presentation_Console\DAL\bin\Debug\EntityFramework.xml
+C:\Users\user\OneDrive\Documents\ASP .NET Web\FINAL\Presentation_Console\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\Documents\ASP .NET Web\FINAL\Presentation_Console\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Documents\ASP .NET Web\FINAL\Presentation_Console\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\user\OneDrive\Documents\ASP .NET Web\FINAL\Presentation_Console\DAL\obj\Debug\DAL.dll
+C:\Users\user\OneDrive\Documents\ASP .NET Web\FINAL\Presentation_Console\DAL\obj\Debug\DAL.pdb

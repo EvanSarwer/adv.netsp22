@@ -7,6 +7,7 @@ using System.Web.Security;
 using WevAssociation.Auth;
 using WevAssociation.Models.Database;
 using WevAssociation.Models.Entities;
+using AutoMapper;
 
 namespace WevAssociation.Controllers
 {
@@ -19,9 +20,14 @@ namespace WevAssociation.Controllers
             
             AdvWeb1Entities db = new AdvWeb1Entities();
             var dept = (from d in db.Departments where d.Id == 1 select d).FirstOrDefault();
+
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<Department, DepartmentModel>());
+            var mapper = new Mapper(config);
+            var dp = mapper.Map<DepartmentModel>(dept);
+
             DepartmentModel de = new DepartmentModel();
-            de.Name = dept.Name;
-            de.Id = dept.Id;
+            //de.Name = dept.Name;
+            //de.Id = dept.Id;
             return View(dept);   
         }
         [HttpGet]
@@ -76,6 +82,22 @@ namespace WevAssociation.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+        public ActionResult DepartmentCourse()
+        {
+            AdvWeb1Entities db = new AdvWeb1Entities();
+            var dept = (from d in db.Departments where d.Id == 1 select d).FirstOrDefault();
+
+            var config = new MapperConfiguration(cfg =>
+                {
+                    cfg.CreateMap<Department, DepartmentCourseModel>();
+                    cfg.CreateMap<Cours, CourseModel>();
+                }
+            );
+            var mapper = new Mapper(config);
+            var data = mapper.Map<DepartmentCourseModel>(dept);
+
+            return View(data);
         }
     }
 }

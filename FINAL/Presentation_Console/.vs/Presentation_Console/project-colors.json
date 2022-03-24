@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2739c7a-8033-4664-8255-6fe917b6bd74": {
+      "ProjectGuid": "a2739c7a-8033-4664-8255-6fe917b6bd74",
+      "DisplayName": "Presentation_Console",
+      "ColorIndex": 0
+    },
+    "510945f5-f106-43f0-81e2-083f3a4a312a": {
+      "ProjectGuid": "510945f5-f106-43f0-81e2-083f3a4a312a",
+      "DisplayName": "BLL",
+      "ColorIndex": 1
+    },
+    "4476daa4-a638-4264-a9c6-7b13dad3168e": {
+      "ProjectGuid": "4476daa4-a638-4264-a9c6-7b13dad3168e",
+      "DisplayName": "DAL",
+      "ColorIndex": 2
+    },
+    "4214d996-d0cf-4721-aa42-1fe7422cdb40": {
+      "ProjectGuid": "4214d996-d0cf-4721-aa42-1fe7422cdb40",
+      "DisplayName": "Presentation_API",
+      "ColorIndex": 3
+    },
+    "b2fe4d61-2de7-4fb9-87c4-40e636ea5312": {
+      "ProjectGuid": "b2fe4d61-2de7-4fb9-87c4-40e636ea5312",
+      "DisplayName": "Presentation_MVC",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}
